@@ -25,6 +25,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
 
     <application android:icon="@drawable/app_music"
@@ -167,7 +168,7 @@
             />
         </activity>
         <activity android:name="com.android.music.PlaylistBrowserActivity"
-                android:label="@string/musicbrowserlabel" 
+                android:label="@string/musicbrowserlabel"
                 android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.PICK" />
